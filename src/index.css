@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+  --font-family2: 'Karla', sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #f2f2f2 1.84%, #c6c6c6e5 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #dddddd -13.86%, #2c2c2ce5 99.55%);
+  
+  --color-bg: #101010;
+  --color-footer : linear-gradient(89.97deg, #6e6e6e8b 1.84%, #2c2c2ce5 102.67%);
+  --color-blog: #042c54;
+  --color-text: #fefefe;
+  --color-subtext: #ded1fa;
+}

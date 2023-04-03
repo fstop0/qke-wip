@@ -1,0 +1,137 @@
+.qke__navbar {
+    display: flex;
+    align-items: center;
+    padding: 2rem 6rem;
+    justify-content: flex-start;
+}
+
+.qke__navbar-links {
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.qke__navbar-links-logo {
+    margin-right: 1.12rem;
+    align-items: center;
+}
+
+.qke__navbar-links_logo img {
+    width: auto;
+    height: 48px;
+    margin-right: 1rem;
+}
+
+.qke__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.qke__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.qke__navbar-links_container p, 
+.qke__navbar-sign p, 
+.qke__navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.qke__navbar-sign button,
+.qke__navbar-menu_container button {
+    padding: .64rem 1.12rem;
+    color: rgba(42,42,42, 1);;
+    background: #fefefe;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    /* margin-left: 1.6rem; */
+    border-radius: 6px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.qke__navbar-menu {
+    margin-left: 1.12rem;
+    display: none;
+    position: relative;
+}
+
+.qke__navbar-menu png {
+    cursor: pointer;
+}
+
+.qke__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 240px;
+    border-radius: 6px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.qke__navbar-menu_container p {
+    margin: 1.12rem 0;
+
+}
+
+.qke__navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .qke__navbar-links_container {
+        display: none;
+    }
+
+    .qke__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .qke__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .qke__navbar {
+        padding: 2rem;
+    }
+
+    .qke__navbar-sign {
+        display: none;
+    }
+
+    .qke__navbar-menu_container {
+        top: 20px;
+    }
+
+    .qke__navbar-menu_container-links-sign {
+        display: block;
+    }
+}

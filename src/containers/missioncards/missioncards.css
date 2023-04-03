@@ -1,0 +1,242 @@
+
+  .qke__missioncards-header {
+    font-family: var(--font-family);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    position: relative;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  
+  .qke__mission {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 30%;
+    border-radius: 40px;
+  } 
+  
+  .qke__mission-feature2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem;
+    max-width: 75rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 12px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
+  .qke__mission-feature2 h1 {
+    font-family: var(--font-family);
+    font-size: 48px;
+  }
+  
+  .qke__missioncards-header h1 {
+    font-size: 4rem;
+  }
+  
+  .qke__missioncards {
+    background-image: url("../../assets/Var-NykoliKoslow-ThePropheticPerfect-JoshHintz.jpg");
+    background-size: 200%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .qke__missioncards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  
+  .qke__card {
+    padding: 3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4rem;
+    flex-wrap: wrap;
+    max-width: 40%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+  }
+
+
+  .qke__card:hover {
+    transform: scale(1.05);
+    cursor: grab;
+  }
+
+  .qke__card h2 {
+    font-family: var(--font-family);
+    color: #020202;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: .5rem;
+  }
+
+  .qke__card:hover h2{
+    text-decoration: underline;
+  }
+  
+  .qke__card p {
+    padding: 1rem;
+    color: var(--color-text);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-family);
+    line-height: 24px;
+  }
+  
+  /* Media queries */
+  
+  @media screen and (max-width: 1024px) {
+    .qke__card {
+      max-width: 70vw;
+      margin: 2.5rem;
+      padding: 1rem;
+    }
+  
+    .qke__missioncards-header h1 {
+        font-size: 0px;
+        visibility: hidden;
+    }
+
+    .qke__card p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .qke__card {
+      width: 80vw;
+      /* height: auto; */
+      padding: 1.5rem;
+    }
+  
+    .qke__missioncards-container {
+      /* display: grid; */
+      /* grid-template-columns: 1fr 1fr; */
+      gap: 0.5rem;
+    }
+  
+    .qke__card p {
+      font-size: 16px;
+      line-height: 20px;
+
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .qke__card {
+      width: 90vw;
+      height: auto;
+      padding: 1.5rem;
+    }
+  
+    .qke__missioncards-container {
+      display: block;
+    }
+  
+    .qke__card h2 {
+      font-size: 18px;
+    }
+  
+    .qke__card p {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }  
+  
+  @media screen and (max-width: 850px) {
+    .qke__mission-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+  
+    .qke__mission-heading p {
+        margin-top: 1rem;
+    }
+  
+    .qke__mission-heading p {
+        font-size: 18px;
+        line-height: 20px;
+        /* text-decoration: underline; */
+        /* text-align: right; */
+    }
+
+    .qke__mission-feature2 h1 {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .qke__mission-feature .qke__features-container__feature {
+        flex-direction: column;
+    }
+  
+    /* Customizing feature component as per needs */
+    .qke__mission-feature .qke__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+  
+    .qke__mission-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+  
+    .qke__mission-heading p {
+        font-size: 18px;
+        line-height: 20px;
+        /* text-decoration: underline; */
+        /* text-align: right; */
+    }
+
+    .qke__mission-feature2 {
+      padding: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 460px) {
+    /* Customizing feature component as per needs */
+    .qke__mission-container .qke__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+  
+   .qke__mission-heading p {
+        font-size: 18px;
+        line-height: 20px;
+        /* text-align: right; */
+    }
+
+    .qke__mission-feature2 {
+      padding: 1.5rem;
+    }
+
+    .qke__mission-feature2 h1 {
+      font-size: 24px;
+    }
+  }

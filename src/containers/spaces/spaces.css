@@ -1,0 +1,161 @@
+.qke__spaces_container {
+    padding: 0;
+    /* height: 80vh; */
+    /* margin-top: 5rem; */
+    /* margin-bottom: 5rem; */
+    background-image: url("../../assets/mesh-gradient.png");
+    background-size: 2000%;
+}
+
+.qke__spaces_header {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.spaces-span h2 {
+    flex: 1;
+    font-family: var(--font-family);
+    /* margin-left: 2rem; */
+    /* padding-top: 2rem; */
+    font-size: 3rem;
+    padding-left: 2rem;
+    padding-right: 15rem;
+}
+
+.qke__spaces_header p {
+    flex: 2.5;
+    text-align: left;
+    font-size: 20px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--color-text);
+    padding-top: 3rem;
+}
+.qke__space_card {
+    min-height: 40rem;
+    min-width: 30rem;
+    padding: 40px;
+    position: relative;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+.qke__space_card img {
+    transition: filter 0.3s ease-in-out;
+    filter: none;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.57);
+    pointer-events: none;
+}
+
+.qke__space_card:hover img {
+    filter: blur(2px);
+    opacity: .45;
+
+}
+
+.qke__space_card_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.qke__space_card:hover .qke__space_card_overlay {
+    opacity: 1;
+  }
+
+  .qke__space_card_overlay h2 {
+    color: white;
+    font-family: var(--font-family);
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    padding: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .qke__space_card:hover .qke__space_card_overlay h2 {
+    opacity: 1;
+  }
+
+
+.qke__spaces_innercarousel {
+    display: flex;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding-bottom: 3rem;
+
+}
+
+.qke__spaces_carousel {
+    cursor: grab;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    /* background-color: red; */
+    /* padding: 2rem 0; */
+}
+
+.qke__space_text h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+  }
+
+  @media screen and (max-width: 767px) {
+    .qke__spaces_header {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .qke__spaces_header h2 {
+        font-size: 28px;
+        padding: 0;
+    }
+    .qke__spaces_header p {
+        font-size: 16px;
+        padding-top: 2rem;
+        
+    }
+
+    .qke__space_card {
+        min-height: 30rem;
+        min-width: 20rem;
+        padding: 30px;
+        position: relative;
+        /* background-color: rgba(255, 255, 255, 0.2); */
+        }
+
+    .qke__space_card_overlay h2 {
+        font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .qke__space_card {
+        min-height: 20rem;
+        min-width: 15rem;
+        padding: 20px;
+    }
+  }

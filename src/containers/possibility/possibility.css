@@ -1,0 +1,20 @@
+.qke__possibility-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.qke__possibility-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.qke__possibility-content h3 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--color-subtext);
+}
